@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/avaalukebadv/defaulttenant/testmanager_",
+  "defaultProject": {
+    "id": "7bffa4c1-5516-0000-5534-0b475f5fd388",
+    "name": "SAP_Tesing_Demo",
+    "key": "LOAN"
+  }
+}

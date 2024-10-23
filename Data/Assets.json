@@ -1,0 +1,32 @@
+﻿[
+	{
+		"Name": "SAPUserID",
+		"Asset": "SAPUserID",
+		"OrchestratorAssetFolder": "RPAFolder",
+		"Description": "this is SAP User ID"
+	},
+	{
+		"Name": "SAPClient",
+		"Asset": "SAPClient",
+		"OrchestratorAssetFolder": "RPAFolder",
+		"Description": "SAP Client Detail"
+	},
+	{
+		"Name": "SAPLanguage",
+		"Asset": "SAPLanguage",
+		"OrchestratorAssetFolder": "RPAFolder",
+		"Description": "SAP Language Details"
+	},
+	{
+		"Name": "SAPLoganPath",
+		"Asset": "SAPLoganPath",
+		"OrchestratorAssetFolder": "RPAFolder",
+		"Description": "SAP Logan Path Details"
+	},
+	{
+		"Name": "SAPConnectionName",
+		"Asset": "SAPConnectionName",
+		"OrchestratorAssetFolder": "RPAFolder", 
+		"Description": "SAP ConnectionName Details"
+	}
+]
