@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- FlowChart_Selection_Creation_Updation_Validation_Testing
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: Default
 
 steps:
 - script: echo Hello, world!
