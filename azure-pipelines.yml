@@ -19,13 +19,14 @@ steps:
   displayName: 'Run a multi-line script'
 - task: UiPathPack@5
   inputs:
-    versionType: 'CurrentVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)'
+    versionType: 'AutoVersion'
+    projectJsonPath: 'project.json'
+    outputType: 'Process'
     orchestratorConnection: 'DevopsSCC'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-    traceLevel: 'Information'
-- task: PublishBuildArtifacts@1
+- task: UiPathDeploy@5
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+    orchestratorConnection: 'DevopsSCC'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'RPAFolder'
+    entryPoints: 'FlowChart_Selection_Creation_Updation_Validation_Testing.xaml'
