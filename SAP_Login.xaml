@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1153.3333333333333,1766</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1150,1755.3333333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SAP_Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -115,14 +115,14 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SAP_Login" sap:VirtualizedContainerService.HintSize="1016,1701.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SAP_Login" sap:VirtualizedContainerService.HintSize="1016,1690.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message-Logging To SAP Page" sap:VirtualizedContainerService.HintSize="954,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Logging to SAP started&quot;]" />
-    <ucas:Logon Window="{x:Null}" ConnectionName="[In_SAPConnectionName]" DelayBetweenRetries="15000" DisplayName="SAP Logon-to click the Company profile" sap:VirtualizedContainerService.HintSize="954,173.33333333333334" sap2010:WorkflowViewState.IdRef="Logon_1" Retries="10" SAPLogonPath="[In_SAPLoganPath]" />
+    <ui:LogMessage DisplayName="Log Message-Logging To SAP Page" sap:VirtualizedContainerService.HintSize="954,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Logging to SAP started&quot;]" />
+    <ucas:Logon Window="{x:Null}" ConnectionName="[In_SAPConnectionName]" DelayBetweenRetries="15000" DisplayName="SAP Logon-to click the Company profile" sap:VirtualizedContainerService.HintSize="954,172" sap2010:WorkflowViewState.IdRef="Logon_1" Retries="10" SAPLogonPath="[In_SAPLoganPath]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,199.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -141,7 +141,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ucas:Login SecurePassword="{x:Null}" Window="{x:Null}" Client="[In_Client]" DisplayName="SAP Login 'saplogon.exe SAP'-to login to SAP with credentails" sap:VirtualizedContainerService.HintSize="954,407.3333333333333" sap2010:WorkflowViewState.IdRef="Login_1" IsSecure="False" Language="[In_Language]" MultiLogonOptionToChoose="Multiple" Password="Avaali1$" Timeout="5000" Username="[In_UserID]">
+    <ucas:Login SecurePassword="{x:Null}" Window="{x:Null}" Client="[In_Client]" DisplayName="SAP Login 'saplogon.exe SAP'-to login to SAP with credentails" sap:VirtualizedContainerService.HintSize="954,403.3333333333333" sap2010:WorkflowViewState.IdRef="Login_1" IsSecure="False" Language="[In_Language]" MultiLogonOptionToChoose="Multiple" Password="Harshini@567" Timeout="5000" Username="[In_UserID]">
       <ucas:Login.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab3cb2d1-c809-42d2-b0cf-a32af4ab7d24" InformativeScreenshot="0de7c2b9e680648ec10124fdb191f7ff" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;">
           <ui:Target.TimeoutMS>
@@ -153,25 +153,25 @@
         </ui:Target>
       </ucas:Login.Target>
     </ucas:Login>
-    <uix:NCheckState DisplayName="Check App State 'Toolbar tbar[1]'" sap:VirtualizedContainerService.HintSize="954,631.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+    <uix:NCheckState DisplayName="Check App State 'Toolbar tbar[1]'" sap:VirtualizedContainerService.HintSize="954,628.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
       <uix:NCheckState.IfExists>
-        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,263.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,262" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,172.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Successful&quot;]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Successful&quot;]" />
         </Sequence>
       </uix:NCheckState.IfExists>
       <uix:NCheckState.IfNotExists>
-        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,378" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,376.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login Is not Successfull !&quot;]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,178" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Login Is not Successfull !&quot;]" />
           <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,258" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -224,6 +224,6 @@
         </uix:TargetAnchorable>
       </uix:NCheckState.Target>
     </uix:NCheckState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;SAP Login Page Ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,166" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;SAP Login Page Ended&quot;]" />
   </Sequence>
 </Activity>
