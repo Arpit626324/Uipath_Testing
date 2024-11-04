@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - script: echo Hello, world!
@@ -23,6 +23,13 @@ steps:
     projectJsonPath: 'project.json'
     orchestratorConnection: 'DevopsSCC'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathTest@5
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'DevopsSCC'
+    testSet: 'UipathSAP_TestSet'
+    folderName: 'RPAFolder'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
 - task: UiPathDeploy@5
   inputs:
     orchestratorConnection: 'DevopsSCC'
